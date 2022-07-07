@@ -1,109 +1,102 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Mi página</title>
+  <head>
+    <title>Mi página</title>
 
-        <!-- Meta -->
-        <meta name="title" content="Mi página">
-        <meta name="description" content="Portafolio de desarrollador web">
-        <meta name="keywords" content="Desarrollador Web, CSS, HTML, JavaScript">
-        <meta name="robots" content="index, follow">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <meta name="language" content="Spanish">
-        <meta name="author" content="Ares Caamaño Martínez">
-        
-        <!-- Styles -->
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/stylesheet.css">
-        <link rel="stylesheet" href="/css/media.css">
+    <!-- Meta -->
+    <meta name="title" content="Mi página" />
+    <meta name="description" content="Portafolio de desarrollador web" />
+    <meta name="keywords" content="Desarrollador Web, CSS, HTML, JavaScript" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="Spanish" />
+    <meta name="author" content="Ares Caamaño Martínez" />
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/vnd.microsoft.icon" href="/assets/media/images/favicon.ico">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/media.css" />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="/assets/media/images/favicon.ico"
+    />
 
-        <!-- Scripts -->
-        <script src="/js/scripts.js"></script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Scripts -->
+    <script src="/js/scripts.js"></script>
+  </head>
 
-    </head>
+  <body>
+    <video autoplay muted loop id="body__video">
+      <source src="/assets/media/videos/Lines-5227.mp4" type="video/mp4" />
+    </video>
 
-    <body>
+    <div id="body__leftdiv">
+      <nav>
+        <a href=".."
+          ><img src="/assets/media/images/favicon.ico" alt="Logo"
+        /></a>
 
-        <video autoplay muted loop id="body__video">
-            <source src="/assets/media/videos/Lines-5227.mp4" type="video/mp4">
-        </video>  
+        <div id="body__leftdiv-div">
+          <a href="#home" class="body__leftdiv-nav-ul-li-a">Inicio</a>
 
+          <a href="#about" class="body__leftdiv-nav-ul-li-a">Sobre mí</a>
 
-        <div id="body__leftdiv">
-            
-            <nav>
-                
-                <a href=".."><img src="/assets/media/images/favicon.ico" alt="Logo"></a>
+          <a href=".." class="body__leftdiv-nav-ul-li-a">Portafolio</a>
 
-                <div id="body__leftdiv-div">
-
-                    <a href="#home" class="body__leftdiv-nav-ul-li-a">Inicio</a>
-
-                    <a href="#about" class="body__leftdiv-nav-ul-li-a">Sobre mí</a>
-
-                    <a href=".." class="body__leftdiv-nav-ul-li-a">Portafolio</a>
-
-                    <a href=".." class="body__leftdiv-nav-ul-li-a">Contacto</a>  
-
-                </div>
-
-                <a href="https://github.com/AresESP" target="_blank"><img src="/assets/media/images/GitHub-Mark/PNG/GitHub-Mark-32px.png" alt="Github"></a>
-
-            </nav>
-            
+          <a href=".." class="body__leftdiv-nav-ul-li-a">Contacto</a>
         </div>
-            
 
-        <div id="body__rightdiv"> 
+        <a href="https://github.com/AresESP" target="_blank"
+          ><img
+            src="/assets/media/images/GitHub-Mark/PNG/GitHub-Mark-32px.png"
+            alt="Github"
+        /></a>
+      </nav>
+    </div>
 
-            <header id="home">
-
-                <div id="header__div">
-
-                    <h1 class="title">Ares,<br><span>D</span>esarrollador Web</h1>
-
-                </div>
-
-            </header>
-
-            <main>
-                <article id="about">
-                    <h2 class="title">Sobre mí</h2>
-
-                    <div>
-
-                        <div class="article__div">
-
-                            <p>
-                                Vivo en una bonita ciudad en Galicia, España, donde me he enamorado de la informática.
-                                Soy un aprendiz de desarrollador web que va a empezar con el ciclo superior DAW.
-                                Me encanta aprender y colaborar con otros para hacer grandes cosas, como esta página,
-                                que es mi primer paso en esta industria, que sé que me va a encantar.
-                            </p>
-
-                        </div>
-
-                        <div class="article__div">
-                            <img src="/assets/media/images/about-image.svg" alt="aboutimage">
-                        </div>
-                        
-
-                    </div>
-                </article>
-
-            </main>
-
+    <div id="body__rightdiv">
+      <header id="home">
+        <div id="header__div">
+          <h1 class="title">Ares,<br /><span>D</span>esarrollador Web</h1>
         </div>
-               
-    </body>
+      </header>
 
+      <main>
+        <article id="about">
+          <h2 class="title">Sobre mí</h2>
+
+          <div>
+            <div class="article__div">
+              <p>
+                Vivo en una bonita ciudad en Galicia, España, donde me he
+                enamorado de la informática. Soy un aprendiz de desarrollador
+                web que va a empezar con el ciclo superior DAW. Me encanta
+                aprender y colaborar con otros para hacer grandes cosas, como
+                esta página, que es mi primer paso en esta industria, que sé que
+                me va a encantar.
+              </p>
+            </div>
+
+            <div class="article__div">
+              <img
+                src="/assets/media/images/about-image.svg"
+                alt="aboutimage"
+              />
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </body>
 </html>
