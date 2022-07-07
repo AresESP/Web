@@ -15,14 +15,37 @@ header{
     align-items: center;
 }
 
-aside{
+nav{
+    display: grid;
+    grid-template-rows: 1.5fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    
 
     height: 100%;
     width: 100%;
 
     background-color: #002133;
-    opacity: 0.4;
-} 
+}
+
+nav>a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #E2E6E7;
+}
+
+nav>a:nth-child(1){
+    background-color: #000;
+}
+
+nav>a:nth-child(3){
+    height: 32px;
+}
 
 /* Secondary tags */
 ul{
@@ -58,10 +81,7 @@ ul{
     width: 90%;
 }
 
-/* Header-Classes */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-/* Header-IDs */
+/* Header */
 #header__div {
     padding-left: 3%;
     padding-top: 2%;
@@ -79,4 +99,32 @@ ul{
 #header__div>h1::first-letter{
     color: #ff9500;
     text-shadow: 4px 0 #fff;
+}
+
+#header__div>h1>span{
+    color: #ff9500;
+    text-shadow: 4px 0 #fff;    
+}
+
+/* Nav */
+#body__leftdiv-div>a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #E2E6E7;
+
+    border-bottom: 2px solid black;
+}
+
+#body__leftdiv-div>a:nth-child(1){
+    border-top: 2px solid black;
+}
+
+#body__leftdiv-div{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
 }
