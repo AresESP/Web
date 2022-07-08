@@ -53,6 +53,14 @@ nav > a:nth-child(3) {
   height: 32px;
 }
 
+article{
+  height: 100vh;
+  width: 100%;
+
+  padding: 2rem 2rem;
+  padding-bottom: 0;
+}
+
 /* Shared */
 .title {
   margin: 0;
@@ -65,19 +73,30 @@ nav > a:nth-child(3) {
   color: #fff;
 }
 
-.article__div {
-  display: flex;
-
-  height: 100%;
-
-  justify-content: center;
-  align-items: center;
+.main__article{
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
 }
 
-.article__div > p {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin: 0;
+.article__div {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-rows: 1fr;
+
+  padding-top: 2rem;
+  gap: 2rem;
+
+
+  height: 100%;
+}
+
+#article__div-textdiv{
+  margin: auto;
+}
+
+.article__div-imgdiv{
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Body */
@@ -142,25 +161,57 @@ nav > a:nth-child(3) {
 }
 
 /* About */
-#about {
-  display: grid;
-  grid-template-rows: 1fr 3fr 1fr;
+#aboutimg{
+  background-image: url(/assets/media/images/about-image.svg);
+  background-size: cover;
+}
 
-  height: 100vh;
-  width: 100%;
+
+/* Portfolio */
+#portfolio__div{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
 
   padding: 2rem 2rem;
-  padding-bottom: 0;
-}
 
-#about > div {
-  align-self: center;
-
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  column-gap: 2rem;
-
+  height: 100%;
   width: 100%;
-
-  align-self: center;
 }
+
+#portfolio__div>div{
+  border: 2px solid white;
+  background-color: #000;
+
+  height: 50%;
+  width: 25%;
+}
+
+/* Contact */
+#contactimg{
+  background-image: url(/assets/media/images/contact-image.svg);
+  background-size: contain;
+}
+
+#contact__form{
+  display: grid;
+  grid-template-rows: 2fr 1fr 3fr 1fr;
+  gap: .5rem;
+
+  height: 100%;
+}
+
+.contact__div-input{
+  height: 50%;
+}
+
+.contact__input{
+  display: block;
+  
+  width: 100%;
+}
+
+#contact__submit{
+  width: 80%;
+}
+

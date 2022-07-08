@@ -52,9 +52,9 @@
 
           <a href="#about" class="body__leftdiv-nav-ul-li-a">Sobre mí</a>
 
-          <a href=".." class="body__leftdiv-nav-ul-li-a">Portafolio</a>
+          <a href="#portfolio" class="body__leftdiv-nav-ul-li-a">Portafolio</a>
 
-          <a href=".." class="body__leftdiv-nav-ul-li-a">Contacto</a>
+          <a href="#contact" class="body__leftdiv-nav-ul-li-a">Contacto</a>
         </div>
 
         <a href="https://github.com/AresESP" target="_blank"
@@ -73,27 +73,60 @@
       </header>
 
       <main>
-        <article id="about">
+        <article id="about" class="main__article">
           <h2 class="title">Sobre mí</h2>
 
-          <div>
-            <div class="article__div">
+          <div class="article__div">
+
+            <div id="article__div-textdiv">
               <p>
-                Vivo en una bonita ciudad en Galicia, España, donde me he
-                enamorado de la informática. Soy un aprendiz de desarrollador
-                web que va a empezar con el ciclo superior DAW. Me encanta
-                aprender y colaborar con otros para hacer grandes cosas, como
-                esta página, que es mi primer paso en esta industria, que sé que
-                me va a encantar.
-              </p>
+                Vivo en una bonita ciudad en Galicia, España.<br />
+                Soy un aprendiz de desarrollador webs.<br />
+                Me encanta aprender y colaborar con otros para hacer grandes
+                cosas.<br />
+                Mira mis trabajos o contáctame más abajo.
+              </p>              
             </div>
 
-            <div class="article__div">
-              <img
-                src="/assets/media/images/about-image.svg"
-                alt="aboutimage"
-              />
+            <div class="article__div-imgdiv" id="aboutimg"></div>
+
+          </div>
+        </article>
+
+        <article id="portfolio" class="main__article">
+          <h2 class="title">Mis trabajos</h2>
+
+          <div id="portfolio__div" class="article__div">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </article>
+
+        <article id="contact" class="main__article">
+          <h2 class="title">Contacto</h2>
+
+          <div class="article__div">
+            <div>
+              <form id="contact__form" action="https://formspree.io/f/moqronqz" method="post">
+                <div>
+                  <input name="name" type="text" placeholder="Nombre" class="contact__input contact__div-input" required>
+                  <input name="email" type="email" placeholder="Email" class="contact__input contact__div-input" required>                  
+                </div>
+
+                <input name="subject" type="text" placeholder="Asunto" class="contact__input" required>
+                <textarea name="message" placeholder="Mensaje" class="contact__input" required></textarea>
+
+                <input type="submit" value="Enviar" id="contact__submit">
+              </form> 
             </div>
+  
+            <div class="article__div-imgdiv" id="contactimg"></div>
           </div>
         </article>
       </main>
