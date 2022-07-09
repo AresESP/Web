@@ -41,13 +41,21 @@
       <source src="/assets/media/videos/Lines-5227.mp4" type="video/mp4" />
     </video>
 
-    <div id="body__leftdiv">
+    <div id="navegationdiv">
       <nav>
-        <a href=".."
-          ><img src="/assets/media/images/favicon.ico" alt="Logo"
-        /></a>
+        <div class="navegationdiv__div">
+          <a href="..">
+            <img class="navegationdiv__div-img" src="/assets/media/images/favicon.ico" alt="Logo"
+            />
+          </a>          
+        </div>
 
-        <div id="body__leftdiv-div">
+
+        <div class="navegationdiv__div">
+          <img class="navegationdiv__div-img" src="/assets/media/icons/bx-menu.svg" alt="Menú">
+        </div>
+
+        <!-- <div id="body__leftdiv-div">
           <a href="#home" class="body__leftdiv-nav-ul-li-a">Inicio</a>
 
           <a href="#about" class="body__leftdiv-nav-ul-li-a">Sobre mí</a>
@@ -61,7 +69,7 @@
           ><img
             src="/assets/media/images/GitHub-Mark/PNG/GitHub-Mark-32px.png"
             alt="Github"
-        /></a>
+        /></a> -->
       </nav>
     </div>
 
@@ -80,11 +88,13 @@
 
             <div id="article__div-textdiv">
               <p>
-                Vivo en una bonita ciudad en Galicia, España.<br />
-                Soy un aprendiz de desarrollador webs.<br />
-                Me encanta aprender y colaborar con otros para hacer grandes
-                cosas.<br />
-                Mira mis trabajos o contáctame más abajo.
+                Vivo en una bonita ciudad en Galicia, España, en donde he completado
+                mis estudios a la vez que me he enamorado poco a poco de la informática.
+                Estoy aprendiendo a desarrollar webs, y con ese objetivo me he apuntado
+                al ciclo superior de desarrollo de aplicaciones web, DAW.
+                Me encanta aprender; por mi cuenta, de alguien con más experiencia o colaborando
+                con otros y no le tengo miedo a la presión.
+                Para cualquier consulta contáctame más abajo, estaré encantado de atenderte.
               </p>              
             </div>
 
@@ -93,40 +103,31 @@
           </div>
         </article>
 
-        <article id="portfolio" class="main__article">
+        <article class="main__article" id="portfolio">
           <h2 class="title">Mis trabajos</h2>
 
-          <div id="portfolio__div" class="article__div">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+          <div id="portfolio__div">
             <div></div>
           </div>
         </article>
 
-        <article id="contact" class="main__article">
-          <h2 class="title">Contacto</h2>
+        <article class="main__article" id="contact">
+          <h2 class="title" id="contact__title" >Contacto</h2>
 
           <div class="article__div">
             <div>
               <form id="contact__form" action="https://formspree.io/f/moqronqz" method="post">
-                <div>
-                  <input name="name" type="text" placeholder="Nombre" class="contact__input contact__div-input" required>
-                  <input name="email" type="email" placeholder="Email" class="contact__input contact__div-input" required>                  
-                </div>
+                <input name="name" type="text" placeholder="Nombre" class="contact__input contact__div-input" required>
+
+                <input name="email" type="email" placeholder="Email" class="contact__input contact__div-input" required>                  
 
                 <input name="subject" type="text" placeholder="Asunto" class="contact__input" required>
+                
                 <textarea name="message" placeholder="Mensaje" class="contact__input" required></textarea>
 
                 <input type="submit" value="Enviar" id="contact__submit">
               </form> 
             </div>
-  
-            <div class="article__div-imgdiv" id="contactimg"></div>
           </div>
         </article>
       </main>

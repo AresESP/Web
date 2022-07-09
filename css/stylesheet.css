@@ -7,15 +7,14 @@ LOW PRIORITY -  It's needed to update de --vh variable, it's not being used and 
 /* Main tags */
 html {
   scroll-behavior: smooth;
+  font-size: 4vw;
 }
 
 body {
   min-height: 100vh;
-  display: flex;
 }
 
-header,
-article {
+header{
   height: 100vh;
   width: 100%;
 }
@@ -24,13 +23,12 @@ header {
   display: flex;
 
   align-items: center;
+  justify-content: center;
 }
 
 nav {
-  display: grid;
-  grid-template-rows: 1.5fr 3fr 1fr;
-  grid-template-columns: 1fr;
-  row-gap: 2rem;
+  display: flex;
+  justify-content: space-between;
 
   height: 100%;
   width: 100%;
@@ -38,36 +36,24 @@ nav {
   background-color: #002133;
 }
 
-nav > a {
-  display: flex;
-  height: 100%;
-  width: 100%;
+p{
+  font-size: 1rem;
+  text-align: justify;
 
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: #e2e6e7;
+  line-height: 1.5;
 }
 
-nav > a:nth-child(3) {
-  height: 32px;
-}
-
-article{
-  height: 100vh;
-  width: 100%;
-
-  padding: 2rem 2rem;
-  padding-bottom: 0;
+textarea{
+  resize: none;
 }
 
 /* Shared */
 .title {
-  margin: 0;
+  margin: auto;
 
   font-family: "Audiowide", cursive;
   font-weight: 400;
-  font-size: 5rem;
+  font-size: 2rem;
 
   text-shadow: 2px 0 #000;
   color: #fff;
@@ -75,19 +61,15 @@ article{
 
 .main__article{
   display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
+  grid-template-rows: auto 4fr;
+  width: 100%;
+
+  row-gap: 2rem;
 }
 
 .article__div {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-template-rows: 1fr;
-
-  padding-top: 2rem;
-  gap: 2rem;
-
-
-  height: 100%;
+  padding: 0 1rem;
+  font-size: 2rem;
 }
 
 #article__div-textdiv{
@@ -97,6 +79,7 @@ article{
 .article__div-imgdiv{
   background-repeat: no-repeat;
   background-position: center;
+  height: 80vw;
 }
 
 /* Body */
@@ -111,22 +94,32 @@ article{
   z-index: -1;
 }
 
-#body__leftdiv {
-  position: sticky;
+/* Navegation Div */
+#navegationdiv {
+  position: fixed;
   top: 0;
-  height: 100vh;
-  width: 10%;
+  height: 8vh;
+  width: 100%;
 }
 
-#body__rightdiv {
-  width: 90%;
+.navegationdiv__div{
+  width: 8vh;
+}
+
+.navegationdiv__div-img{
+  width: 100%;
+}
+
+.navegationdiv__div >a{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  width: 100%;
+  height: 100%;
 }
 
 /* Header */
-#header__div {
-  padding-left: 3%;
-}
-
 #header__div > h1::first-letter {
   color: #ff9500;
   text-shadow: 4px 0 #fff;
@@ -138,7 +131,7 @@ article{
 }
 
 /* Nav */
-#body__leftdiv-div > a {
+#navegationbar-div > a {
   display: flex;
   height: 100%;
   width: 100%;
@@ -151,11 +144,11 @@ article{
   border-bottom: 2px solid black;
 }
 
-#body__leftdiv-div > a:nth-child(1) {
+#navegationbar-div > a:nth-child(1) {
   border-top: 2px solid black;
 }
 
-#body__leftdiv-div {
+#navegationbar-div {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
 }
@@ -169,25 +162,35 @@ article{
 
 /* Portfolio */
 #portfolio__div{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0;
-
-  padding: 2rem 2rem;
+  display: grid;
+  grid-auto-rows: 300px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  row-gap: 1rem;
 
   height: 100%;
   width: 100%;
+
+  padding: 0 2rem;
 }
 
 #portfolio__div>div{
   border: 2px solid white;
   background-color: #000;
 
-  height: 50%;
-  width: 25%;
+  height: 100%;
+  width: 100%;
 }
 
+#portfolio__div-9{
+  display: none;
+}  
+
 /* Contact */
+#contact{
+  margin-top: 3rem;
+}
+
+
 #contactimg{
   background-image: url(/assets/media/images/contact-image.svg);
   background-size: contain;
@@ -199,6 +202,7 @@ article{
   gap: .5rem;
 
   height: 100%;
+  padding: 0 3rem;
 }
 
 .contact__div-input{
@@ -211,7 +215,28 @@ article{
   width: 100%;
 }
 
-#contact__submit{
-  width: 80%;
+
+/* Media Querys */
+@media only screen and (max-width: 600px){
+
 }
 
+@media only screen and (min-width: 600px){
+
+}
+
+@media only screen and (min-width: 760px){
+
+}
+
+@media only screen and (min-width: 992px){
+
+}
+
+@media only screen and (min-width: 1200px){
+
+  #navegationbar{
+    display: block;
+  } 
+  
+}
