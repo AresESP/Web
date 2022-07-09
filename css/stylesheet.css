@@ -163,14 +163,10 @@ textarea{
 /* Portfolio */
 #portfolio__div{
   display: grid;
-  grid-auto-rows: 300px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  row-gap: 1rem;
+  grid-template-rows: minmax(300px, 1fr);
 
   height: 100%;
   width: 100%;
-
-  padding: 0 2rem;
 }
 
 #portfolio__div>div{
@@ -178,12 +174,10 @@ textarea{
   background-color: #000;
 
   height: 100%;
-  width: 100%;
-}
+  width: 70%;
 
-#portfolio__div-9{
-  display: none;
-}  
+  margin: auto;
+}
 
 /* Contact */
 #contact{
@@ -198,7 +192,7 @@ textarea{
 
 #contact__form{
   display: grid;
-  grid-template-rows: 2fr 1fr 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 3fr 1fr 1fr;
   gap: .5rem;
 
   height: 100%;
