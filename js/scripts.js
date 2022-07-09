@@ -1,8 +1,16 @@
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+// alert("Esta página todavía no está terminada")
+let control = 0
 
-window.addEventListener('resize', () =>{
 
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+function openMenu(){
+    if (control == 0){
+        document.querySelector("body").style.overflow = "hidden";    
+        document.querySelector("#navegationdiv__menu").style.display = "block";
+        control = 1;   
+    }
+    else{
+        document.querySelector("body").style.overflow = "auto";    
+        document.querySelector("#navegationdiv__menu").style.display = "none";
+        control = 0;
+    }
+}

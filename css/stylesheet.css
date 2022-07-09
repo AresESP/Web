@@ -65,7 +65,7 @@ textarea{
   width: 100%;
 
   row-gap: 2rem;
-  margin-top: 2rem;
+  padding-top: 5rem;
 }
 
 .article__div {
@@ -97,7 +97,7 @@ textarea{
 
 /* Navegation Div */
 #navegationdiv {
-  position: fixed;
+  position: sticky;
   top: 0;
   height: 8vh;
   width: 100%;
@@ -105,6 +105,10 @@ textarea{
 
 .navegationdiv__div{
   width: 8vh;
+}
+
+.navegationdiv__div:hover{
+  cursor: pointer;
 }
 
 .navegationdiv__div-img{
@@ -154,6 +158,53 @@ textarea{
   grid-template-rows: repeat(4, 1fr);
 }
 
+#navegationdiv__menu{
+  display: none;
+
+  position: fixed;
+  bottom: 0;
+
+  height: 92vh;
+  width: 100%;
+
+  background-color: #002133;
+
+}
+
+#navegationdiv__menu >div{
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+
+  height: 100%;
+  width: 100%;
+
+  padding-bottom: 2rem ;
+}
+
+#navegationdiv__menu >div >a{
+  display: flex;
+
+  color: #e2e6e7;
+
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 2px solid #000;
+}
+
+#navegationdiv__menu >div >a:nth-child(1){
+  border-top: 2px solid #000;
+}
+
+#navegationdiv__menu >div >a:nth-child(5){
+  border-bottom: none;
+}
+
+#navegationdiv__menu >div >a:hover{
+  color: #b2b5b5;
+  text-decoration: underline;
+}
+
 /* About */
 #aboutimg{
   background-image: url(/assets/media/images/about-image.svg);
@@ -201,7 +252,6 @@ textarea{
   gap: .5rem;
 
   height: 100%;
-  padding: 0 3rem;
 }
 
 .contact__input{
