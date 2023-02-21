@@ -22,14 +22,21 @@ img {
     height: 100%;
 }
 
-.body__div {
+.body__div--fixed-div {
     position: fixed;
+    z-index: 0;
+
     display: flex;
+    flex-wrap: wrap;
 
     height: 100vh;
     width: 100%;
 
     padding: 1.5rem;
+
+    background-image: url(../images/index-sectionImage.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .div__header {
@@ -113,4 +120,32 @@ img {
     align-content: center;
 
     height: 100%;
+}
+
+.header__div--navegation{
+    position: absolute;
+    align-self: center;
+    margin-left: 1.5rem;
+}
+
+.header__div--navegation a{
+    display: block;
+
+    height: 1rem;
+    width: 1rem;
+
+    border: .15rem solid #2C306F;
+
+    transform: rotate(45deg);
+}
+
+.header__div--navegation ul{
+    display: grid;
+    grid-template-rows: repeat(3, 2rem);
+    align-items: center;
+}
+
+.body__div{
+    position: relative;
+    z-index: 10;
 }
