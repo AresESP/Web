@@ -5,16 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/index-stylesheet.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+
     <title>Ares' Personal Web</title>
 </head>
 
 <body>
-    <div>
-        <header>
-            <div>
-                <button><img src="./images/logo.svg" alt="Menu botón"></button>
-                <nav>
-                    <ul>
+    <div class="body__div">
+        <header class="div__header">
+            <div class="header__div">
+                <button class="div__button"><img src="./images/logo.svg" alt="Menu botón"></button>
+                <nav class="div__nav--menu-nav">
+                    <ul class="nav__ul--menu-ul">
                         <li><a href="">Home</a></li>
                         <li><a href="">Projects</a></li>
                         <li><a href="">Technologies</a></li>
@@ -22,7 +31,7 @@
                 </nav>
             </div>
             <div>
-                <ul>
+                <ul class="div__ul--socialmedia-list">
                     <li><a href=""><img src="./images/github-mark/github-mark.svg" alt="Github"></a></li>
                     <li><a href=""><img src="./images/github-mark/github-mark.svg" alt="Linkedin"></a></li>
                 </ul>
@@ -63,7 +72,7 @@
             <input type="text" name="name" placeholder="Nombre...">
             <input type="email" name="mail" placeholder="Correo...">
             <textarea name="message" placeholder="Mensaje..."></textarea>    
-            <input type="submit" value="Submit">                
+            <input type="submit" value="">                
         </form>
     </section>
 
