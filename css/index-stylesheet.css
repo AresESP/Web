@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --primary-font: 'Indie Flower', cursive;
     --secondary-font: 'Lobster', cursive;
 
@@ -49,7 +49,7 @@ img {
     display: flex;
 }
 
-.div__button{
+.div__button {
     position: relative;
     z-index: 5;
 }
@@ -63,13 +63,13 @@ img {
     padding-left: 2.5rem;
 }
 
-.div__nav--menu-nav li{
+.div__nav--menu-nav li {
     height: 100%;
     width: 100%;
     background-color: #DDF7F1;
-} 
+}
 
-.div__nav--menu-nav a{
+.div__nav--menu-nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,15 +83,16 @@ img {
     color: var(--primary-text-color);
 }
 
-.div__nav--menu-nav a:hover{
+.div__nav--menu-nav a:hover {
     background-color: #C2F0E6;
 }
 
-.div__nav--menu-nav li:first-child{
+.div__nav--menu-nav li:first-child {
     padding-left: 2.5rem;
 }
 
-.div__nav--menu-nav li:last-child, .div__nav--menu-nav li:last-child a{
+.div__nav--menu-nav li:last-child,
+.div__nav--menu-nav li:last-child a {
     border-radius: 0 50% 50% 0;
 }
 
@@ -100,9 +101,16 @@ img {
     grid-template-columns: 12.5rem repeat(2, 10rem);
     grid-template-rows: 1fr;
 
+    height: 100%;
+}
+
+.div__ul--socialmedia-list{
+    display: grid;
+    grid-template-columns: 3rem 3rem;
+    grid-template-rows: 2rem;
+
     justify-items: center;
     align-content: center;
 
     height: 100%;
-
 }
