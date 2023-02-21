@@ -8,6 +8,10 @@
 
     --primary-text-color: #12172B;
     --subheader-text-color: #5E5E5E;
+
+    --presentation-text-primary-color: #2C306D;
+    --presentation-text-secondary-color: #FFD048;
+    --presentation-text-terciary-color: #A6E3DC;
 }
 
 html {
@@ -148,4 +152,59 @@ img {
 .body__div{
     position: relative;
     z-index: 10;
+}
+
+.div__section{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    height: 100vh;
+}
+
+.div__section--presentation h1, .div__section--presentation h2{
+    display: block;
+    width: 100%;
+
+    text-align: center;
+
+    font-family: var(--primary-font);
+    color: var(--presentation-text-primary-color);
+}
+
+.div__section--presentation h1{
+    font-size: 5rem;
+}
+
+.div__section--presentation h1::after{
+    content: "Ares";
+    color: var(--presentation-text-secondary-color);
+}
+
+.div__section--presentation h2{
+    font-size: 4rem;
+}
+
+.div__section--presentation h2::before{
+    content: "Web developer ";
+    color: var(--presentation-text-terciary-color);
+}
+
+.div__section--presentation h2::after{
+    content: " Coder";
+    color: var(--presentation-text-terciary-color);
+}
+
+.section__div--arrow-div{
+    position: absolute;
+    width: 0;
+    height: 0;
+
+    border-top: 8rem solid var(--presentation-text-primary-color);
+    border-left: 8rem solid transparent;
+    border-right: 8rem solid transparent;
+
+    align-self: center;
+    transform: translateY(10rem);
 }
