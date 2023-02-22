@@ -12,6 +12,12 @@
     --presentation-text-primary-color: #2C306D;
     --presentation-text-secondary-color: #FFD048;
     --presentation-text-terciary-color: #A6E3DC;
+
+    --about-focus-color: #F5F5F5;
+    --about-unfocus-color: #E2E2E2;
+
+
+    scroll-behavior: smooth;
 }
 
 html {
@@ -159,6 +165,10 @@ img {
     align-items: center;
 }
 
+.header__div--attribution{
+    align-self: flex-end;
+}
+
 .body__div{
     position: relative;
     z-index: 10;
@@ -171,6 +181,10 @@ img {
     justify-content: center;
 
     height: 100vh;
+}
+
+.div__section:last-child{
+    height: 90vh;
 }
 
 .div__section--presentation h1, .div__section--presentation h2{
@@ -217,4 +231,57 @@ img {
 
     align-self: center;
     transform: translateY(10rem);
+}
+
+.div__section--about{
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.div__section--about article{
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    height: 25rem;
+    width: 30rem;
+
+    padding: 2rem 2rem;
+
+    border-radius: 25%;
+    background-color: var(--about-focus-color);
+
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.div__section--about article:nth-child(1){
+    z-index: 10;
+
+    transform: translate(25%, -25%);
+}
+
+.div__section--about article:nth-child(2){
+    z-index: 5;
+
+    transform: translate(-25%, 25%);
+    background-color: var(--about-unfocus-color);
+}
+
+.div__section--about article h2{
+    height: min-content;
+    width: 100%;
+
+    text-align: center;
+
+    color: var(--subheader-text-color);
+    font-family: var(--primary-font);
+    font-size: 2rem;
+}
+
+.div__section--about article p{
+    color: var(--primary-text-color);
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
 }
