@@ -16,6 +16,9 @@
     --focus-color: #F5F5F5;
     --unfocus-color: #E2E2E2;
 
+    --footer-bk-color: #A5E4DC;
+    --footer-text-font: Arial, Helvetica, sans-serif;
+
     scroll-behavior: smooth;
 }
 
@@ -182,4 +185,45 @@ img {
 .body__div{
     position: relative;
     z-index: 10;
+}
+
+.body__footer{
+    position: relative;
+    z-index: 40;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 3rem;
+
+    padding: 0 1rem;
+
+    background-color: var(--footer-bk-color);
+
+    color: var(--primary-text-color);
+    font-family: var(--footer-text-font);
+    font-size: .8rem;
+}
+
+.body__footer a{
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.body__footer a:hover{
+    text-decoration: underline;
+}
+
+.body__footer a:first-child{
+    margin-right: .5rem;
+}
+
+.div__section{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    height: 100vh;
 }
