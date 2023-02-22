@@ -241,7 +241,14 @@ img {
     border-right: 8rem solid transparent;
 
     align-self: center;
-    transform: translateY(10rem);
+    
+    animation-name: arrow-down;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-iteration-count: 4;
+    animation-timing-function: ease;
 }
 
 .div__section--about{
@@ -319,9 +326,13 @@ img {
 }
 
 .div__section--contact form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     height: 100%;
 
-    padding: 0 25%;
+    padding: 0 30%;
 }
 
 .div__section--contact form input{
@@ -360,6 +371,16 @@ img {
     resize: none;
 }
 
+.div__section--contact form button{
+    height: 4rem;
+    transition-property: height;
+    transition-duration: 1s;
+}
+
+.div__section--contact form button:hover{
+    height: 5rem;
+}
+
 .body__footer{
     position: relative;
     z-index: 40;
@@ -392,3 +413,13 @@ img {
     margin-right: .5rem;
 }
 
+/* Animations */
+@keyframes arrow-down {
+    0%{
+        transform: translateY(10rem);
+    }
+
+    100%{
+        transform: translateY(15rem);
+    }
+}
