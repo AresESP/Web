@@ -25,7 +25,7 @@
     <div class="body__div--fixed-div">
         <header class="div__header">
             <div class="header__div">
-                <button class="div__button"><img src="./images/logo.svg" alt="Menu botón"></button>
+                <button class="div__button"><img class="button__img" src="./images/logo.svg" alt="Menu botón"></button>
                 <nav class="div__nav--menu-nav">
                     <ul class="nav__ul--menu-ul">
                         <li><a href="./index.html">Home</a></li>
@@ -58,31 +58,36 @@
     </div>
 
     <div class="body__div">
-        <section class="div__section div__section--presentation" id="first-section">
-            <h1>Hi! Im </h1>
-            <h2>and </h2>
+        <section class="div__section" id="first-section">
+            <header class="section__header section__header--presentation">
+                <h1 class="header__h1--presentation">Hi! Im </h1>
+                <h2 class="header__h2--presentation">and </h2>                
+            </header>
+
             <div class="section__div--arrow-div"></div>
         </section>
     
         <section class="div__section div__section--about" id="second-section">
-            <article id="about-article">
-                <h2>Sobre mí</h2>
-                <p>Mi nombre es Ares y nací en Barcelona, España un 27 de marzo del 2004. Gracias a mi padre, que también disfruta de experimentar con los ordenadores, descubrí que me gustaba la informática.</p>
+            <article class="section__article section__article--about" id="about-article">
+                <header class="article__header"><h3 class="header__h3">Sobre mí</h3></header>
+                
+                <p class="article__p">Mi nombre es Ares y nací en Barcelona, España un 27 de marzo del 2004. Gracias a mi padre, que también disfruta de experimentar con los ordenadores, descubrí que me gustaba la informática.</p>
             </article>
     
-            <article id="education-article">
-                <h2>Aprendizaje</h2>
-                <p>Mi aprendizaje estuvo marcado por la academia WeRobots que me introdujo a la programación cuando era más pequeño. Después, durante el bachillerato, conocí el desarrollo web gracias a mi profesora de TIC. Por último, por ahora, estoy cursando el ciclo superior DAW en el IES Fernando Wirtz.</p>
+            <article class="section__article section__article--about" id="education-article">
+                <header class="article__header"><h3 class="header__h3">Aprendizaje</h3></header>
+                
+                <p class="article__p">Mi aprendizaje estuvo marcado por la academia WeRobots que me introdujo a la programación cuando era más pequeño. Después, durante el bachillerato, conocí el desarrollo web gracias a mi profesora de TIC. Por último, por ahora, estoy cursando el ciclo superior DAW en el IES Fernando Wirtz.</p>
             </article>
         </section>
     
-        <section class="div__section div__section--contact" id="third-section">
-            <header><h2>CONTACTO</h2></header>
-            <form action="post">
-                <input type="text" name="name" placeholder="Nombre...">
-                <input type="email" name="mail" placeholder="Correo...">
-                <textarea name="message" placeholder="Mensaje..."></textarea>    
-                <button type="submit"><img src="./images/mail.svg" alt="Enviar"></button>                
+        <section class="div__section" id="third-section">
+            <header class="section__header"><h2 class="header__h2">Contacto</h2></header>
+            <form action="post" class="section__form">
+                <input class="form__input" type="text" name="name" placeholder="Nombre...">
+                <input class="form__input" type="email" name="mail" placeholder="Correo...">
+                <textarea class="form__textarea" name="message" placeholder="Mensaje..."></textarea>    
+                <button type="submit"><img class="button__img" src="./images/mail.svg" alt="Enviar"></button>                
             </form>
         </section>
     </div>

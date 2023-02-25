@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/shared-stylesheet.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/shared-stylesheet.css">
 
-    <link rel="stylesheet" href="../css/projects-stylesheet.css">
+    <link rel="stylesheet" href="/css/projects-stylesheet.css">
 
-    <link rel="shortcut icon" href="../images/logo.svg" type="image/svg+xml">
+    <link rel="shortcut icon" href="/images/logo.svg" type="image/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
                 <button class="div__button"><img src="../images/logo.svg" alt="Menu botón"></button>
                 <nav class="div__nav--menu-nav">
                     <ul class="nav__ul--menu-ul">
-                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="/index.html">Home</a></li>
                         <li><a href="./proyects.html">Projects</a></li>
                         <li><a href="./technologies.html">Technologies</a></li>
                     </ul>
@@ -37,9 +37,9 @@
             <div>
                 <ul class="div__ul--socialmedia-list">
                     <li><a href="https://github.com/AresESP" target="_blank"><img
-                                src="../images/github-mark/github-mark.svg" alt="Github"></a></li>
+                                src="/images/github-mark/github-mark.svg" alt="Github"></a></li>
                     <li><a href="https://www.linkedin.com/in/ares-caama%C3%B1o/" target="_blank"><img
-                                src="../images/linkedin-round-icon.svg" alt="Linkedin"></a></li>
+                                src="/images/linkedin-round-icon.svg" alt="Linkedin"></a></li>
                 </ul>
             </div>
         </header>
@@ -61,25 +61,37 @@
 
     <div class="body__div">
         <section class="div__section div__section--recent-project" id="first-section">
-            <h2>Proyecto Destacado</h2>
-            <article>
-                <div class="article__div">
-                    <h3>Mi Web</h3>
-                    <p>Mi proyecto más reciente, esta página web. Ha sido todo lo desafiante que puede ser un proyecto y ha puesto a prueba mis habilidades con CSS HTML y JS además de mi paciencia. También me ha hecho explorar Github, aunque a un nivel bastante básico.</p>
-                </div> 
-                <div class="article__div article__div--image"><img src="../images/projectCards/personal-web.jpg" alt="Imagen de página web"></div>   
-            </article>
+            <header class="section__header"><h2 class="header__h2">Proyecto Destacado</h2></header>
+            
+            <div class="section__div">
+                <article class="div__article">
+                        <header class="article__header"><h3 class="header__h3">Mi Web</h3></header>
+                        
+                        <p class="article__p">Mi proyecto más reciente, esta página web. Ha sido todo lo desafiante que puede ser un proyecto y ha puesto a prueba mis habilidades con CSS HTML y JS además de mi paciencia. También me ha hecho explorar Github, aunque a un nivel bastante básico.</p>
+                </article>
+                <figure>
+                    <img src="/images/projectCards/personal-web.jpg" alt="Imagen de página web">
+                    <figcaption><a href=""><img src="/images/github-mark/github-mark.svg" alt="Link a repositorio"></a></figcaption>
+                </figure>                
+            </div>
+
         </section>
 
         <section class="div__section div__section--recent-project" id="second-section">
-            <h2>Próximo Proyecto</h2>
-            <article>
-                <div class="article__div">
-                    <h3>Mi Web (Angular)</h3>
-                    <p>Mi próximo proyecto será construir mi página web pero usando Angular. Mientras hacía esta página me dí cuenta de lo necesaria que es la modularización, no poder hacer uso de ella ha sido causa de retrasos indeseados además de resultar en un código menos legible y mantenible. Este proyecto tendrá como objetivo dejar una página mucho más limpia y reforzar mis conocimientos de JS</p>
-                </div> 
-                <div class="article__div article__div--image"><img src="../images/projectCards/personal-web.jpg" alt="Imagen de página web"></div>   
-            </article>
+            <header class="section__header"><h2 class="header__h2">Próximo Proyecto</h2></header>
+            
+            <div class="section__div">
+                <article class="section__article">
+                        <header class="article__header"><h3 class="header__h3">Mi Web (Angular)</h3></header>
+                        
+                        <p class="article__p">Mi próximo proyecto será construir mi página web pero usando Angular. Mientras hacía esta página me dí cuenta de lo necesaria que es la modularización, no poder hacer uso de ella ha sido causa de retrasos indeseados además de resultar en un código menos legible y mantenible.</p>
+                </article>
+                <figure>
+                    <img src="/images/projectCards/personal-web.jpg" alt="Imagen de página web">
+                    <figcaption><a href=""><img src="/images/github-mark/github-mark.svg" alt="Link a repositorio"></a></figcaption>
+                </figure> 
+            </div>
+
         </section>
     </div>
 

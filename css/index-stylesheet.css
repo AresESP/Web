@@ -2,49 +2,39 @@
     --input-text-color: #C5C5C5;
 }
 
-.div__section--presentation h1, .div__section--presentation h2{
-    display: block;
-    width: 100%;
-
-    text-align: center;
-
-    font-family: var(--primary-font);
+.section__header--presentation{
     color: var(--presentation-text-primary-color);
 }
 
-.div__section--presentation h1{
+.header__h1--presentation{
     font-size: 5rem;
 }
 
-.div__section--presentation h1::after{
+.header__h2--presentation{
+   font-size: 4rem; 
+}
+
+.header__h1--presentation::after{
     content: "Ares";
     color: var(--presentation-text-secondary-color);
 }
 
-.div__section--presentation h2{
-    font-size: 4rem;
+.header__h2--presentation::before, .header__h2--presentation::after{
+    color: var(--presentation-text-terciary-color);
 }
 
-.div__section--presentation h2::before{
+.header__h2--presentation::before{
     content: "Web developer ";
-    color: var(--presentation-text-terciary-color);
 }
 
-.div__section--presentation h2::after{
+.header__h2--presentation::after{
     content: " Coder";
-    color: var(--presentation-text-terciary-color);
 }
 
 .section__div--arrow-div{
-    position: absolute;
-    width: 0;
-    height: 0;
-
     border-top: 8rem solid var(--presentation-text-primary-color);
     border-left: 8rem solid transparent;
     border-right: 8rem solid transparent;
-
-    align-self: center;
     
     animation-name: arrow-down;
     animation-duration: 1.5s;
@@ -52,102 +42,40 @@
     animation-direction: alternate;
     animation-fill-mode: both;
     animation-iteration-count: 4;
-    animation-timing-function: ease;
+    animation-timing-function: ease-out;
 }
 
-.div__section--about{
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-
-.div__section--about article{
-    display: flex;
-    flex-wrap: wrap;
-
+.section__article--about{
     position: relative;
-
-    height: 25rem;
-    width: 30rem;
-
-    padding: 2rem 2rem;
-
-    border-radius: 25%;
-    background-color: var(--focus-color);
-
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 
     transition-property: z-index, background-color;
     transition-duration: .5s;
 }
 
-.div__section--about article:nth-child(1){
+.section__article--about:nth-child(1){
     z-index: 0;
 
     transform: translate(25%, -25%);
 }
 
-.div__section--about article:nth-child(2){
+.section__article--about:nth-child(2){
     z-index: 1;
 
     transform: translate(-25%, 25%);
     background-color: var(--unfocus-color);
 }
 
-.div__section--about article h2{
-    height: min-content;
-    width: 100%;
+.section__form{
+    display: grid;
 
-    text-align: center;
+    grid-template-rows: repeat(2, 4rem) 24rem 4rem;
+    row-gap: 1rem;
 
-    color: var(--subheader-text-color);
-    font-family: var(--primary-font);
-    font-size: 2rem;
+    width: 31rem;
 }
 
-.div__section--about article p{
-    color: var(--primary-text-color);
-    font-family: var(--primary-font);
-    font-size: 1.2rem;
-}
-
-.div__section--contact{
-    padding: 10rem;
-
-    align-content: flex-start;
-}
-
-.div__section--contact header{
-    width: 100%;
-
-    margin-bottom: 1rem;
-
-    align-self: flex-start;
-
-    font-size: 3.5rem;
-    font-family: var(--primary-font);
-    color: var(--focus-color);
-    text-align: center;
-
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.div__section--contact form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    height: 100%;
-
-    padding: 0 30%;
-}
-
-.div__section--contact form input{
-    height: 4rem;
-    width: 100%;
-
-    margin-bottom: 1rem;
-
+.form__input,
+.form__textarea{
     background-color: var(--focus-color);
 
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -159,42 +87,21 @@
     font-size: 1.5rem;
 }
 
-.div__section--contact form textarea{
-    height: 24rem;
-    width: 100%;
-
-    margin-bottom: 1rem;
-
-    border: none;
-
-    background-color: var(--focus-color);
-    
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25); 
-    
-    font-family: var(--primary-font);
-    color: var(--primary-text-color);
-    font-size: 1.5rem;  
-    
-    resize: none;
-}
-
-.div__section--contact form button{
-    height: 4rem;
+.button__img{
     transition-property: transform;
     transition-duration: .5s;
 }
 
-.div__section--contact form button:hover{
+.button__img:hover{
     transform: scale(110%);
 }
 
 /* Animations */
 @keyframes arrow-down {
     0%{
-        transform: translateY(10rem);
     }
 
     100%{
-        transform: translateY(15rem);
+        transform: translateY(5rem);
     }
 }

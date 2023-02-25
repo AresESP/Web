@@ -32,22 +32,6 @@
     font-family: var(--primary-font);
 }
 
-.div__section--recent-project h2{
-    font-size: 4rem;
-    color: var(--focus-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.div__section--recent-project article{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-
-    align-self: center;
-
-    width: auto;
-}
-
 .article__div{
     display: flex;
     justify-content: center;
@@ -75,4 +59,8 @@
 
 .article__div--image img{
     border-radius: 15%;
+}
+
+.section__div{
+    display: flex;
 }
