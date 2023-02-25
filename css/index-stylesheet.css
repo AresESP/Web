@@ -71,7 +71,7 @@
     grid-template-rows: repeat(2, 4rem) 24rem 4rem;
     row-gap: 1rem;
 
-    width: 31rem;
+    width: 35rem;
 }
 
 .form__input,
