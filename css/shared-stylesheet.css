@@ -224,8 +224,10 @@ img {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    align-items: center;
 
     row-gap: 2rem;
+    column-gap: 2rem;
 
     height: 100vh;
 }
@@ -278,4 +280,51 @@ img {
     font-family: var(--primary-font);
     font-size: 1.7rem;
     line-height: 2rem;
+}
+
+.article__figure,
+.div__figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 1rem;
+
+    background-color: var(--focus-color);
+    border-radius: 15%;
+}
+
+.article__figure:hover img,
+.div__figure:hover > img{
+    opacity: .25;
+}
+
+.article__figure:hover figcaption,
+.div__figure:hover figcaption{
+    opacity: 1;
+}
+
+.figure__img{
+    width: 100%;
+    height: auto;
+
+    transition-property: opacity;
+    transition-duration: .7s;
+    border-radius: 15%;
+}
+
+.figure__figcaption{
+    position: absolute;
+
+    opacity: 0;
+
+
+    font-family: var(--primary-font);
+    color: var(--primary-text-color);
+    font-size: 2rem;
+
+    transition-property: opacity;
+    transition-duration: .5s;
 }

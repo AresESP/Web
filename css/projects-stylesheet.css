@@ -18,49 +18,16 @@
     scroll-behavior: smooth;
 }
 
-
-.div__section{
-    align-content: center;
-    align-items: center;
-}
-
-.div__section--recent-project{
-    padding: 8rem;
-
-    row-gap: 4rem;
-
-    font-family: var(--primary-font);
-}
-
-.article__div{
+.section__div--project{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    height: 28rem;
-    width: 30rem;
-
-    padding: 2rem;
-
-    border-radius: 15%;
-
-    background-color: var(--focus-color);
+    column-gap: 2rem;
 }
 
-.article__div--image{
-    display: flex;
-    justify-content: center;
-    align-content: center;
 
-    width: auto;
 
-    padding: 1rem;
+.div__figure--project{
+    width: 40rem;
+
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.article__div--image img{
-    border-radius: 15%;
-}
-
-.section__div{
-    display: flex;
-}
