@@ -70,6 +70,16 @@ img {
     z-index: 5;
 }
 
+
+.button__img{
+    transition-property: transform;
+    transition-duration: .5s;
+}
+
+.button__img:hover{
+    transform: scale(110%);
+}
+
 .div__nav--menu-nav {
     position: absolute;
     align-self: center;
@@ -79,13 +89,19 @@ img {
     padding-left: 2.5rem;
 }
 
-.div__nav--menu-nav li {
+.nav__div{
+    height: 100%;
+
+    overflow-x: hidden;
+}
+
+.ul__li--menu {
     height: 100%;
     width: 100%;
     background-color: #DDF7F1;
 }
 
-.div__nav--menu-nav a {
+.li__a--menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,25 +115,27 @@ img {
     color: var(--primary-text-color);
 }
 
-.div__nav--menu-nav a:hover {
+.li__a--menu:hover {
     background-color: #C2F0E6;
 }
 
-.div__nav--menu-nav li:first-child {
+.ul__li--menu:first-child {
     padding-left: 2.5rem;
 }
 
-.div__nav--menu-nav li:last-child,
-.div__nav--menu-nav li:last-child a {
+.ul__li--menu:last-child,
+.li__a--menu-last{
     border-radius: 0 50% 50% 0;
 }
 
-.nav__ul--menu-ul {
+.div__ul--menu-ul {
     display: grid;
     grid-template-columns: 12.5rem repeat(2, 10rem);
     grid-template-rows: 1fr;
 
     height: 100%;
+
+    transform: translateX(-100%);
 }
 
 .div__ul--socialmedia-list {

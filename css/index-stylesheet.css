@@ -87,15 +87,6 @@
     font-size: 1.5rem;
 }
 
-.button__img{
-    transition-property: transform;
-    transition-duration: .5s;
-}
-
-.button__img:hover{
-    transform: scale(110%);
-}
-
 /* Animations */
 @keyframes arrow-down {
     0%{

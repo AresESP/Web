@@ -25,13 +25,15 @@
     <div class="body__div--fixed-div">
         <header class="div__header">
             <div class="header__div">
-                <button class="div__button"><img class="button__img" src="./images/logo.svg" alt="Menu botón"></button>
+                <button id="div__button" class="div__button" onclick="menuOpen"><img class="button__img" src="./images/logo.svg" alt="Menu botón"></button>
                 <nav class="div__nav--menu-nav">
-                    <ul class="nav__ul--menu-ul">
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./html/proyects.html">Projects</a></li>
-                        <li><a href="./html/technologies.html">Technologies</a></li>
-                    </ul>
+                    <div class="nav__div">
+                        <ul id="div__ul--menu-ul" class="div__ul--menu-ul">
+                            <li class="ul__li--menu"><a class="li__a--menu" href="./index.html">Home</a></li>
+                            <li class="ul__li--menu"><a class="li__a--menu" href="./html/proyects.html">Projects</a></li>
+                            <li class="ul__li--menu"><a class="li__a--menu li__a--menu-last" href="./html/technologies.html">Technologies</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
             <div>
@@ -104,5 +106,6 @@
 
     <script src="/js/navegation.js"></script>
     <script src="/js/cards.js"></script>
+    <script src="/js/menu-open.js"></script>
 </body>
 </html>
